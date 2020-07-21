@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            background-image: url("public/img/pattern.jpg")
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            border: 2px solid grey;
+            height: auto;
+            width: 40%;
+            padding: 0 10% 10px;
+            margin-top: 50px;
+            margin-left: 280px;
+            background-color: #ffff;
+        }
+        .form1{
+        width: 500px;
+        }
+        form textarea{
+            height: 100px;
+        }
+
+        .input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display:flex;
+        }
+
+        .label{
+            font-weight: bold;
+            width: 125px;
+            display:inline-block;
+        }
+
+        .form1 input[type=text],textarea{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Hubungi Kami</h1>
+    <p><b>Kantor: </b>di jalan belum jadi</p>
+    <p><b>Nomor Telepon: </b>08XX-XXXX-XXXX</p>
+    <p><b>Email: </b>email@contoh.com</p>
+
+    <h1>Kirimkan Pesan</h1>
+
+    <form class="form1" action="">
+               
+        <div class="input">
+            <label class="label" for="nama">Nama</label>
+            <input type="text" id="nama"/>
+        </div>
+        <div class="input">
+            <label class="label" for="email">Email</label>
+            <input type="email" id="email"/>
+        </div>
+        <div class="input">
+            <label class="label">Jenis Kelamin</label>
+            <div>
+                <input id="laki" type="radio" name="gender"/><label for="laki">Laki-Laki</label><br>
+                <input id="perempuan" type="radio" name="gender"/><label for="perempuan">Perempuan</label>
+            </div>
+            
+        </div>
+        <div class="input">
+            <label class="label" for="pesan">Pesan Anda</label>
+            <textarea id="pesan"></textarea>
+        </div>
+        <a href="index.html"><input type="button" value="Kirim"></a>
+        
+    </form>
+    <br>
+    <a href="index.html">Kembali Ke Index</a>
+    </div>
+</body>
+</html>
